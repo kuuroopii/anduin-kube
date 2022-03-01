@@ -5,5 +5,6 @@ function cleanup {
         echo "Must be root"
         exit 1
     fi
-    stopHealthz && stopCoreDNS && cleanupDNS && cleanupRoute
+    # stopHealthz && stopCoreDNS && cleanupDNS && cleanupRoute
+    stopHealthz && stopCoreDNS && cleanupRoute
 }

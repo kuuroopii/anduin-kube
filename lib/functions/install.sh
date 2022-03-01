@@ -67,7 +67,5 @@ function installKubectl {
 }
 
 function installIfNeeded {
-    checkDeps && \
-        installMinikube && \
-        installKubectl
+    checkDeps
 }
